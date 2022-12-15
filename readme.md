@@ -9,13 +9,23 @@ This has also been semi-allowed by a moderator from the GPO team, though that wa
 
 Releasing it because I don't care that much about GPO and my friends stopped playing.
 
-Requirements:
+![Discord Screenshot](/images/Discord.png "Discord Screenshot")
+
+#### Config Variable Values:
+
+- token: Your Discord Bot Token (with privileges on)
+- channel: Your channel id in numbers
+- message: Keywords for the filter.
+- role: Your ping role id in numbers
+- server: your gpo server in the exact same characters within quotations.
+
+#### Requirements:
 
 - Basic Discord Bot Knowledge
 - An All-Seeing Eye
 - A computer you can run it with, since it needs to be in the foreground foreground
 
-How to run:
+##### How to run:
 
 1. Modify config.json to add the proper values into the variables
 2. run fruity.exe
@@ -25,13 +35,10 @@ How to run:
 6. Wait
 7. Profit
 
-Build Requirements:
+##### Build Instructions (windows):
 
-- Leptonica
-- Tesseract
-- Rust
-
-Build Instructions:
-
-1. View https://github.com/ccouzens/leptonica-sys
-2. cargo build
+1. Install vcpkg from https://github.com/microsoft/vcpkg
+2. SET VCPKG_DEFAULT_TRIPLET=x64-windows
+3. go into the directory of vcpkg with command prompt and do .\vcpkg install leptonica
+4. SET VCPKGRS_DYNAMIC=true
+5. cargo build
