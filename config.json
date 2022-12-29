@@ -46,6 +46,13 @@
     ],
     "role": 0,
     "server": "",
-    "show_warnings": true
+    "show_warnings": true,
+    "crop": {
+      "x": 4,
+      "y": 64,
+      "width": 2,
+      "height": 4
+    },
+    "check_image_timer": 8500
   }
 }
