@@ -2,7 +2,7 @@
   "data": {
     "token": "",
     "channel": 0,
-    "message": [
+    "keywords": [
       "FORT",
       "SANDORA",
       "TOWN",
@@ -45,6 +45,7 @@
       "SPAWNED"
     ],
     "role": 0,
-    "server": ""
+    "server": "",
+    "show_warnings": true
   }
 }

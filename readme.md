@@ -1,4 +1,4 @@
-### GPO Devil Fruit Spawn Notifier
+## GPO Devil Fruit Spawn Notifier
 
 Might be useful on other games.
 This is a discord bot, that upon getting the fruit has spawned message, sends a message to a discord channel.
@@ -11,7 +11,7 @@ Releasing it because I don't care that much about GPO and my friends stopped pla
 
 ![Discord Screenshot](/images/Discord.png "Discord Screenshot")
 
-#### Config Variable Values:
+### Config Variable Values:
 
 - token: Your Discord Bot Token (with privileges on)
 - channel: Your channel id in numbers
@@ -19,13 +19,13 @@ Releasing it because I don't care that much about GPO and my friends stopped pla
 - role: Your ping role id in numbers
 - server: your gpo server in the exact same characters within quotations.
 
-#### Requirements:
+### Requirements:
 
 - Basic Discord Bot Knowledge
 - An All-Seeing Eye
 - A computer you can run it with, since it needs to be in the foreground foreground
 
-##### How to run:
+#### How to run:
 
 1. Modify config.json to add the proper values into the variables
 2. run fruity.exe
@@ -35,7 +35,7 @@ Releasing it because I don't care that much about GPO and my friends stopped pla
 6. Wait
 7. Profit
 
-##### Build Instructions (windows):
+#### Build Instructions (windows):
 
 1. Install vcpkg from https://github.com/microsoft/vcpkg
 2. SET VCPKG_DEFAULT_TRIPLET=x64-windows
