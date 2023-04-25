@@ -66,10 +66,10 @@ async fn startup() {
         .expect("Unable to read and parse config.json");
 
         // Screenshots Main Display and Crops image.
-        screenshot(&config.data.crop.x, &config.data.crop.y, &config.data.crop.width, &config.data.crop.height);
+        let image = screenshot(&config.data.crop.x, &config.data.crop.y, &config.data.crop.width, &config.data.crop.height);
         
         // Read the message from Cropped Screenshotted Image
-        let msg:String = ocr().await.to_uppercase();
+        let msg:String = ocr(image).await.to_uppercase();
         let mut count = 0usize;
 
         // Loops through all keywords to see if message contains one. Effectively a for loop.
@@ -81,7 +81,7 @@ async fn startup() {
                 let sentmessage = channel_id.send_message(&bot, |m| {
                     m.content(format!("<@&{}>", &config.data.role))
                      .embed(|e| e.title(&msg).description(&config.data.server))
-                     .add_file("images/roblox.png")
+                     .add_file(image)
                 }).await;
 
                 sentmessage.unwrap();
